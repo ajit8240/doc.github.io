@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- https://healthtrendmarketingbd.com/# (this is copy weblink)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- bootstrap icon cdn  -->
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+
+     
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-brand{
+            max-width: 150px;
+        }
+
+        .nav-link{
+            color: #142966;
+            margin: 0 5px;
+        }
+
+        .nav-link:hover{
+            color: #1E6DCC;
+        }
+
+        nav i{
+            color: #1E6DCC;
+            font-size: 2.2rem;
+        }
+
+        /* .dropdown:hover>.dropdown-menu {
+                display: block;
+                } */
+
+
+                header{
+                  background-image: linear-gradient(rgba(20, 41, 102,0.6),rgba(20, 41, 102, 0.6)),url(https://northernvirginiamag.com/wp-content/uploads/2020/06/AdobeStock_17016854-scaled.jpeg);
+                    width: 100%;
+                    background-size: cover;
+                    padding: 7rem 0;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                 
+
+                }
+
+                .header-btn{
+                    background-color: #EB1B34;
+                    color: white;
+                    font-weight: 500;
+                }
+
+                .header-btn:hover{
+                    background-color: #ce1127;
+                    color: white;
+                }
+
+              .section-1 h1{
+                    color: #142966;
+                    font-weight: bold;
+                }
+
+               .section-1 h4{
+                    color: #142966;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                .section-1 p{
+                    line-height: 25px;
+                    font-size: 17px;
+                    text-align: justify;
+                } 
+
+                .section-1 img{
+                    max-width: 350px;
+                    width: 100%;
+
+                }
+
+               
+
+@media (max-width:1400px){
+    .section-1{
+        padding: 7rem 0;
+    }
+}
+
+@media (max-width:768px){
+    .section-1{
+        padding: 2rem 0;
+    }
+}
+
+.sec-2-img{
+    max-width:70px ;
+    height: 70px;
+    margin: 0 10px;
+}
+
+@media (max-width:992px){
+                    .section-1 .row{
+                        text-align: center;
+                    }
+
+                    .d-lg-flex{
+                        text-align: center !important;
+                        padding: 1rem 1rem !important;
+                    }
+
+                    .sec-2-img{
+                        max-width:100px ;
+                        height: 100px;
+                    }
+                   
+                }
+
+.main-heading{
+    color: #142966;
+}
+
+.main-heading p{
+    color: #142966;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.content h5{
+    color: #142966;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content .col-lg-4{
+    padding: 20px 10px;
+    text-align: justify;
+}
+
+.content .col-lg-4:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+
+i {
+    color:#FFC300;
+}
+
+.footer-text{
+    font-size: 13px;
+}
+
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+/* FADE IN REVEAL  */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 0.9s ease-in;
+}
+.active.fade-left {
+  animation: fade-left  0.9s ease-in;
+}
+.active.fade-right {
+  animation: fade-right  0.9s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}   
+/* copy and past where you want animation */
+/* reveal fade-left */
+
+
+
+
+            
+              
+
+
+    </style>
+  </head>
+  <body>
+<header>
+<nav class="navbar navbar-expand-lg shadow-lg bg-white py-3 px-5 fixed-top">
+    <div class="container-fluid">
+        <a href="" class="navbar-brand">
+            <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/Health-Trend-Marketing-BD-logo-@3x.png" alt="" class="img-fluid">
+        </a>
+
+        <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+
+        <div class="menus mx-auto fw-bold collapse navbar-collapse text-center" id="myNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li><a href="index.html" class="nav-link ">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                      </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="webdesign.html">Web desining</a></li>
+                      <li><a class="dropdown-item" href="webdev.html">Web Development</a></li>
+                      <li><a class="dropdown-item" href="resp.html">Responsive Design</a></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="about-us.html" class="nav-link">About Us</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="header-hero">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-11">
+          <span class="text-warning fw-bold">AJIT KR DAS</span>
+
+                <h1 class="display-4 lh-1 my-5 fw-bold text-white">Promote Your Hospital Branding With Our Hospital Marketing Agency 
+                    
+                </h1>
+                
+                <p class="text-white fs-5 mb-4">Discover Our Proven Formula To get Success</p>
+                <a href="" class="btn header-btn rounded-pill">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+
+
+<!-- section-1  -->
+<section class="section-1 ">
+    <div class="container ">
+        <div class="row justify-content-center grid gap-0 column-gap-5">
+            <div class="col-lg-5 col-md-12 reveal fade-left ">
+                <h4 class="">We The Health Trend Marketing Agency!</h4>
+                <h1 class="display-4 fw-bold my-3">Choose the best Health Agency in your City</h1>
+                <p class=" my-4">Our team of consultants specializing in hospital digital marketing has extensive experience in crafting effective data-driven strategies. We’ve dedicated years to developing proven programs that aid hospitals and medical organizations in surmounting marketing challenges, predicting and adapting to industry trends, and surpassing business goals.</p>
+
+                <a href="" class="fw-bold text-center text-decoration-none "><p class="more-about">Discover More About Us</p></a>
+            </div>
+
+            <div class="col-lg-6 text-center reveal fade-right">
+                <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/Asset-2@3x-782x1024.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section-2  -->
+<section class="section-2">
+    <div class="container pb-4">
+        <div class="row justify-content-center main-heading">
+            <div class="col-lg-10 col-sm-10 text-center reveal fade-bottom ">
+                <p> Out Featured Services</p>
+                <h1 class="display-3 mt-3 mb-5 fw-bold">We Provides All Exclusive Services for Our Clients</h1>
+            </div>
+        </div>
+
+        <div class="row p-1 px-3 gap-0 row-gap-3 justify-content-center align-item-center content">
+
+            <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left ">
+              <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/landing-page.gif" alt="" class="sec-2-img">
+              <div class="content">
+                <h5>Medical Website Design</h5>
+                <p>We Providing Hospital Website what your business may look like.</p>
+                <a href="">Discover More</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left">
+                
+                <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/repair-tools.gif" alt="" class="sec-2-img">
+                <div class="content">
+                  <h5>SEO Service</h5>
+                  <p>We Providing Hospital Website what your business may look like.</p>
+                  <a href="">Discover More</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left ">
+                <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/bar-chart.gif" alt="" class="sec-2-img">
+                <div class="content">
+                  <h5>Upcoming Trend Discussion</h5>
+                  <p>We Providing Hospital Website what your business may look like.</p>
+                  <a href="">Discover More</a>
+                </div>
+              </div>
+
+              <!-- --------------  -->
+              <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left">
+                <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/optometrist.gif" alt="" class="sec-2-img">
+                <div class="content">
+                  <h5>Doc in a Box</h5>
+                  <p>We Providing Hospital Website what your business may look like.</p>
+                  <a href="">Discover More</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left ">
+                  <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/refer.gif" alt="" class="sec-2-img">
+                  <div class="content">
+                    <h5 >Health Care Social media Marketing</h5>
+                    <p>We Providing Hospital Website what your business may look like.</p>
+                    <a href="">Discover More</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left">
+                  <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/live.gif" alt="" class="sec-2-img">
+                  <div class="content">
+                    <h5>Facebook Ads</h5>
+                    <p>We Providing Hospital Website what your business may look like.</p>
+                    <a href="">Discover More</a>
+                  </div>
+                </div>
+
+             <!-- ------------------  -->
+             <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left ">
+                <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/monitor.gif" alt="" class="sec-2-img">
+                <div class="content">
+                  <h5>Medical Graphics Design</h5>
+                  <p>We Providing Hospital Website what your business may look like.</p>
+                  <a href="">Discover More</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left">
+                  <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/optometrist.gif" alt="" class="sec-2-img">
+                  <div class="content">
+                    <h5>Solo Practitioner's Website</h5>
+                    <p>We Providing Hospital Website what your business may look like.</p>
+                    <a href="">Discover More</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-lg-flex reveal fade-left ">
+                  <img src="https://healthtrendmarketingbd.com/wp-content/uploads/2023/08/monitor.gif" alt="" class="sec-2-img">
+                  <div class="content">
+                    <h5>Medical Info Graphics Design</h5>
+                    <p>We Providing Hospital Website what your business may look like.</p>
+                    <a href="">Discover More</a>
+                  </div>
+                </div>
+            
+        </div>
+
+    
+    </div>
+</section>
+
+
+<!-- Section-3 -->
+<section class="bg-light py-5 section-3">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10 text-center  main-heading  reveal fade-left">
+                <b>Testimonial</b>
+                <h1 class="display-3 fw-bold my-3">We have many Good Client's Review</h1>
+            </div>
+            
+          
+
+        
+                <div class="row d-flex justify-content-center ">
+                  <div class="col-md-10 col-xl-8 text-center reveal fade-left ">
+                    <h3 class="mb-4">Testimonials</h3>
+                    <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                      numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                      quisquam eum porro a pariatur veniam.
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="row text-center d-flex align-items-stretch">
+                  <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card reveal fade-left">
+                      <div class="card-up" style="background-color: #9d789b;"></div>
+                      <div class="avatar mx-auto bg-white">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                          class="rounded-circle img-fluid" />
+                      </div>
+                      <div class="card-body">
+                        <h4 class="mb-4">Maria Smantha</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                          <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet eos adipisci,
+                          consectetur adipisicing elit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4   mb-5 mb-md-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card  reveal fade-left">
+                      <div class="card-up" style="background-color: #7a81a8;"></div>
+                      <div class="avatar mx-auto bg-white">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                          class="rounded-circle img-fluid" />
+                      </div>
+                      <div class="card-body">
+                        <h4 class="mb-4">Lisa Cudrow</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                          <i class="fas fa-quote-left pe-2"></i>Neque cupiditate assumenda in maiores
+                          repudi mollitia architecto.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="col-md-4 mb-0 d-flex align-items-stretch">
+                    <div class="card testimonial-card  reveal fade-left">
+                      <div class="card-up" style="background-color: #6d5b98;"></div>
+                      <div class="avatar mx-auto bg-white">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                          class="rounded-circle img-fluid" />
+                      </div>
+                      <div class="card-body">
+                        <h4 class="mb-4">John Smith</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                          <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                          aliquam repellat rem unde ducimus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+         
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-primary ">
+    <div class="container text-center p-3 text-light footer-text">
+     copyright &copy;2023. All Right Reserve Ajit kr Das
+    </div>
+</footer>
+
+
+<script>
+    // fade reveal Animation
+      function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
